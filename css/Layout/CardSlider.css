@@ -1,0 +1,55 @@
+.card_sidebar_title {
+    background-color: var(--primary-color);
+    letter-spacing: 0.1px;
+    word-spacing: 0.1px;
+    background-image: url('/images/site_pattern.png');
+    background-position: left top;
+    background-size: 1000px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0,0,0,0);
+    display: inline-block;
+    filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+    position: relative;
+}
+.scroll_progress {
+    background-color: var(--progress-bg);
+    width: 350px;
+    height: 6px;
+}
+/* .scroll_progress .progressbar {
+    background-color: white;
+    width: 10px;
+} */
+.cards {
+    scroll-behavior: smooth;
+}
+.cards:hover {
+    scroll-behavior: unset;
+}
+.active_card {
+    background-color:var(--primary-color);
+}
+.card {
+    min-width: 350px;
+    max-width: 350px;
+    height: 400px;
+    background-color: black;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-color);
+}
+.card .card_footer {
+    color:  var(--primary-color);
+}
+.video {
+    cursor: pointer;
+}
+.video_poster {
+    width: 600px;
+    height: 300px;
+    user-select: none;
+}

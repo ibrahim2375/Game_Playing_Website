@@ -1,4 +1,5 @@
 //components
+import About from "@/components/Home/About";
 import Landing from "@/components/Home/Landing";
 import Topics from "@/components/Home/Topics";
 import Nav from "@/components/Layout/Nav";
@@ -24,13 +25,8 @@ export default function Home() {
         {/* black cover with opacity */}
         <Nav />
         <Landing />
-        {/* for testing next section */}
-        <div className="flex items-center justify-center gap-10 px-10 py-24">
-          <Topics />
-          <Topics />
-          <Topics />
-          <Topics />
-        </div>
+        <Topics />
+        <About />
       </main>
     </div>
   );
