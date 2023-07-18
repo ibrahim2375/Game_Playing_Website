@@ -1,7 +1,7 @@
 .general_btn {
     position: relative;
     font-size: 1.2em;
-    padding: 0.5em 2em;
+    padding: 0.5em 1em;
     background-color: var( --primary-color);
     text-decoration: none;
     border: none;

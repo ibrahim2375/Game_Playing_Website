@@ -12,8 +12,8 @@ function Landing() {
     "/devices/steam_b.svg",
   ];
   return (
-    <div className="container mx-auto px-5 relative">
-      <div className="w-full h-screen flex flex-col justify-center gap-16 px-24">
+    <div className="relative pr-10">
+      <div className="w-full h-screen flex flex-col justify-center gap-16 left_padding">
         {/* logo image */}
         <Image className="mt-44" src="/logo/logo-re.svg" width="700" height="500" alt="logo" />
         {/* hint */}

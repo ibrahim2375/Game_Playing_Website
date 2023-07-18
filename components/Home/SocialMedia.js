@@ -10,7 +10,7 @@ import { TfiEmail } from "react-icons/tfi";
 
 function SocialMedia() {
   return (
-    <div className="flex flex-col items-center gap-3 absolute -right-20 top-1/2">
+    <div className="flex flex-col items-center gap-3 absolute right-5 top-1/2">
       <h1 className="font-bold transform rotate-90 mb-10">FOLLOW US</h1>
       <BsDashLg className="link text-2xl" />
       {/* icons */}
