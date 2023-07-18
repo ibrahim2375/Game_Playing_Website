@@ -7,7 +7,7 @@ import {about_images} from '../../data/about'
 function About() {
 
   return (
-    <div className="px-10 my-24 about">
+    <div className="px-10 mt-24 about">
       <div className="content px-20 flex flex-col justify-center gap-10 left_padding">
         <h1 className="about_title mt-5 text-6xl">ABOUT</h1>
         <h1 className="about_description text-8xl max-w-2xl">Survival is just the beginning</h1>
