@@ -1,5 +1,6 @@
 //components
 import About from "@/components/Home/About";
+import Characters from "@/components/Home/Characters";
 import Landing from "@/components/Home/Landing";
 import Story from "@/components/Home/Story";
 import Topics from "@/components/Home/Topics";
@@ -29,6 +30,7 @@ export default function Home() {
         <Topics />
         <About />
         <Story />
+        <Characters />
       </main>
     </div>
   );
