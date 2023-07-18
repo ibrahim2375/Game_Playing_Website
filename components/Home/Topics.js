@@ -2,6 +2,7 @@ import Image from "next/image";
 import "../../css/Home/Topics.css";
 import CardSlider from "../Layout/CardSlider";
 
+
 function Topics() {
   return (
     // Topics Section
@@ -19,13 +20,13 @@ function Topics() {
        {/* divider section */}
        <div className="divider_section flex items-center gap-5 mt-8">
          <span className="line w-40"></span>
-         <span className="title text-2xl">Demo</span>
+         <span className="title text-2xl">DEMO</span>
          <span className="relative line w-1/3 after:content-[''] after:absolute after:-top-2 after:right-0 after:w-3 after:h-0.5 after:bg-red-600 after:rotate-45"></span>
        </div>
       {/* card slider */}
       <CardSlider title={'TOPICS'} type={'card'} />
       {/* card slider */}
-      <CardSlider title={'TRAILER'} type={'video'} />
+      <CardSlider title={'TRAILER'} type={'video'}/>
     </section>
   );
 }

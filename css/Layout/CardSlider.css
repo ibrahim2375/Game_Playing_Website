@@ -15,7 +15,7 @@
 .scroll_progress {
     background-color: var(--progress-bg);
     width: 350px;
-    height: 6px;
+    height: 3px;
 }
 /* .scroll_progress .progressbar {
     background-color: white;

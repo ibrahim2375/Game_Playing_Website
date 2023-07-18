@@ -11,7 +11,9 @@ import { ScrollByMouse } from "@/functions/ScrollByMouse";
 //com
 import TextCard from "./TextCard";
 import VideoCard from "./VideoCard";
-
+//data
+import {trailer} from '../../data/trailers'
+import {topics} from '../../data/topics'
 //variables for scrolling
 let scrollLeft = 0;
 let startX;
@@ -58,12 +60,12 @@ function CardSlider({ title, type }) {
       >
         {type === "card"
           ? // ----------------------------------------- card text an image -----------------------------------------
-            Array.from({ length: 10 }).map((i, index) => (
-              <TextCard key={index}/>
+          topics.map((data, index) => (
+              <TextCard key={data.id} data={data}/>
             ))
           : // ----------------------------------------- videoe ---------------------------------------------------
-            Array.from({ length: 10 }).map((i, index) => (
-               <VideoCard key={index}/>
+            trailer.map((data, index) => (
+               <VideoCard key={data.id} data={data}/>
             ))}
       </div>
     </div>
