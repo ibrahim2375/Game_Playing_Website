@@ -13,27 +13,31 @@ function Characters() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   //handle navigate by buttons
- const prev_btn = () => {
-   let newIndex = currentIndex === 0 ? characters.length - 1 : currentIndex - 1;
-   setCurrentIndex(newIndex);
- }
- const next_btn = () => {
-  let newIndex = currentIndex === characters.length - 1 ? 0 : currentIndex + 1;
-  setCurrentIndex(newIndex);
- }
+  const prev_btn = () => {
+    let newIndex =
+      currentIndex === 0 ? characters.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+  const next_btn = () => {
+    let newIndex =
+      currentIndex === characters.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
   return (
     <div className="px-10 my-24">
-      <header className="flex justify-between items-center gap-10">
+       {/* ---------------------------header----------------------- */}
+      <header className="flex justify-between items-center gap-40">
         <h1 className="left_padding characters_title text-4xl ">CHARACTERS</h1>
         <ul className="navigate_links flex flex-wrap items-end gap-1">
-          {characters.map((character) => (
+          {characters.map((character,index) => (
             <li key={character.id} className="relative cursor-pointer">
               <Image
-                className="transition-all  duration-500 filter grayscale hover:grayscale-0 "
+                onClick={() => setCurrentIndex(index)}
+                className={`transition-all  duration-500 filter grayscale hover:grayscale-0 ${currentIndex === index && 'grayscale-0'}`}
                 style={{ border: ".1px solid gray" }}
                 src={`/characters/${character.img}`}
-                width="150"
-                height="70"
+                width="130"
+                height="60"
                 alt={character.name}
               />
               {/* charachter name */}
@@ -42,15 +46,24 @@ function Characters() {
           ))}
         </ul>
       </header>
-      {/* slider */}
+      {/* ---------------------------slider----------------------- */}
       <div className="slider relative my-24">
         <div
-          style={{ backgroundImage: `url(/characters/${characters[currentIndex].bg})` }}
-          className="w-full h-[600px] bg-center bg-cover duration-300"
+          style={{
+            backgroundImage: `url(/characters/${characters[currentIndex].bg})`,
+          }}
+          className="w-full h-[600px] bg-center bg-cover duration-300 px-24"
         >
-          {/* <div className="content">
-          <h1>title</h1>
-         </div> */}
+          {/* character info */}
+          <div className="h-full flex flex-col justify-center items-end gap-10">
+            {/* data */}
+            <div>
+              <h1 className="character_name text-6xl">
+                {characters[currentIndex].name}
+              </h1>
+              <p className="max-w-lg mt-20">{characters[currentIndex].about}</p>
+            </div>
+          </div>
         </div>
         {/* arrows */}
         {/* left */}
@@ -59,7 +72,7 @@ function Characters() {
         </div>
         {/* right */}
         <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] -right-5">
-          <Button text={<IoIosArrowForward />} action={next_btn}/>
+          <Button text={<IoIosArrowForward />} action={next_btn} />
         </div>
       </div>
     </div>

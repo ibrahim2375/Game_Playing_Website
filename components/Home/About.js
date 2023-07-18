@@ -20,8 +20,8 @@ function About() {
           life and death, terror and catharsis intersect.
         </p>
       </div>
-      <div className="flex items-center justify-between gap-5">
-        {about_images?.map(img => <Image key={img.id} className="max-w-xl" src={`/images/${img.img}`} width='550' height='400' alt="img"/>)}
+      <div className="flex items-center justify-between flex-wrap gap-5">
+        {about_images?.map(img => <Image key={img.id} className="max-w-xl" src={`/images/${img.img}`} width='500' height='400' alt="img"/>)}
       </div>
 
     </div>

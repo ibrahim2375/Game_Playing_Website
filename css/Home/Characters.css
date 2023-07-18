@@ -1,4 +1,4 @@
-.characters_title {
+.characters_title , .character_name {
     background-color: var(--primary-color);
     background-image: url('/images/site_pattern.png');
     background-position: left top;
