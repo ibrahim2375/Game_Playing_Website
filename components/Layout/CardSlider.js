@@ -56,7 +56,7 @@ function CardSlider({ title, type }) {
       {/* cards section */}
       <div
         ref={slider_ref}
-        className={`cards row  overflow-x-auto  flex items-center gap-10 py-10 left_padding pr-10`}
+        className={`cards row  overflow-x-auto overflow-y-hidden  flex items-center gap-10 py-10 left_padding pr-10`}
       >
         {type === "card"
           ? // ----------------------------------------- card text an image -----------------------------------------
