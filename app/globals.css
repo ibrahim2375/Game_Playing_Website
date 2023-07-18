@@ -1,0 +1,28 @@
+
+/* general font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Oswald&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ --primary-color:#bb1020;
+ --bg-color:black;
+ --text-color:white;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+/* general classes */
+.cover {
+    background-color: black;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    /* top: 0;
+    bottom: 0; */
+}
+.link:hover {
+    color: var(--primary-color);
+}

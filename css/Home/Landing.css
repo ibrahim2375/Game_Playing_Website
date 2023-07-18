@@ -1,0 +1,18 @@
+
+.hint_text_red {
+    background-color: #bb1020;
+    letter-spacing: 0.1px;
+    word-spacing: 0.1px;
+}
+
+.hint_text {
+    background-image: url(/images/site_pattern.png);
+    background-position: left top;
+    background-size: 1000px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0,0,0,0);
+    display: inline-block;
+    filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+    position: relative;
+}
