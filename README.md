@@ -1,6 +1,11 @@
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/ibrahim2375/Game_Playing_Website.git
-git push -u origin main
+# NextJS Application
+## Frontend Game Playing Website 
+
+## Start Project 
+```bash
+- npm install
+- ng run dev
+```
+## Application View Web
+### Landing
+![Alt text](public/app/landing.png)
