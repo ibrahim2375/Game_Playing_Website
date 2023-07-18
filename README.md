@@ -7,8 +7,5 @@
 - npm run dev
 ```
 ## Application View Web
-### Landing
-![Alt text](public/app/landing.png)
-
 ### Home
 ![Alt text](public/app/home.png)
