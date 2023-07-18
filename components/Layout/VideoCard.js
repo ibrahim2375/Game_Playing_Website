@@ -39,8 +39,8 @@ function VideoCard({ data }) {
         </span>
       )}
       {/* vedio */}
-      <div className="video_poster flex justify-center items-center">
-        <AiFillYoutube className="youtube_icon text-8xl hover:text-red-700 absolute  z-1" onClick={showTrailer} />
+      <div className="video_poster flex justify-center items-center group">
+        <AiFillYoutube className="youtube_icon text-8xl group-hover:text-red-700 absolute  z-1" onClick={showTrailer} />
         <Image
           className="w-full"
           src={`/videosPosters/${data.poster}`}
