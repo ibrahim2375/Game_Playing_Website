@@ -4,7 +4,7 @@
 ## Start Project 
 ```bash
 - npm install
-- ng run dev
+- npm run dev
 ```
 ## Application View Web
 ### Landing
