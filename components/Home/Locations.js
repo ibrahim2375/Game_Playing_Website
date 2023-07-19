@@ -34,7 +34,7 @@ function Locations() {
       {/* ---------------------------slider----------------------- */}
       <div className="my-10 px-24 grid place-items-center select-none">
         <Image
-          className="w-full h-full object-contain"
+          className="w-2/3 h-full object-contain"
           src={`/locations/${locations[currentIndex].location}`}
           width={"900"}
           height={"100"}
@@ -42,7 +42,7 @@ function Locations() {
         />
       </div>
       {/* controller */}
-      <div className="flex items-center gap-5 justify-center select-none">
+      <div className="flex items-center gap-6 justify-center select-none">
         <IoIosArrowBack
           className="controller_icon text-4xl cursor-pointer"
           onClick={prev_btn}
@@ -51,8 +51,8 @@ function Locations() {
           <span
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`index_line w-10 cursor-pointer ${
-              index == currentIndex ? "h-2" : "h-1"
+            className={`index_line w-12 cursor-pointer ${
+              index == currentIndex ? "h-1" : "h-0.5"
             }`}
           ></span>
         ))}
