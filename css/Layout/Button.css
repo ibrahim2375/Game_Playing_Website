@@ -1,37 +1,40 @@
 .general_btn {
     position: relative;
     font-size: 1.2em;
-    padding: 0.5em 1em;
     background-color: var( --primary-color);
-    text-decoration: none;
-    border: none;
     border-radius: 0.5em;
     color: #DEDEDE;
     box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
     /* bg -img */
     background-image: url(/images/site_pattern.png);
     background-position: left top;
+    cursor: pointer;
+    transition: all 0.2s ease;
   }
   
-  .general_btn::before {
-    position: absolute;
-    content: '';
-    height: 0;
-    width: 0;
-    top: 0;
-    left: 0;
-    background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgba(150,4,31,1) 50%, rgba(191,4,38,1) 60%);
-    border-radius: 0 0 0.5em 0;
-    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
+  
+  .general_btn:hover {
+    animation: a 0.5s 1 linear;
   }
   
-  .general_btn:hover::before {
-    width: 1.6em;
-    height: 1.6em;
-  }
+  @keyframes a {
+    0% {
+      transform: scale(0.7, 1.3);
+    }
   
-  .general_btn:active {
-    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
-    transform: translate(0.1em, 0.1em);
+    25% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    50% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    75% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    100% {
+      transform: scale(1, 1);
+    }
   }

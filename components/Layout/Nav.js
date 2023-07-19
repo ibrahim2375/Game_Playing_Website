@@ -11,7 +11,7 @@ function Nav() {
      <li><a href='#characters' className='text-white'>characters</a></li>
      <li><a href='#location' className='text-white'>location</a></li>  
      <li><a href='#gameplay' className='text-white'>gameplay</a></li>  
-     <li><Button text={'Buy'}/></li>  
+     <li><Button text={'Buy'} padding={'5px 30px'}/></li>  
     </ul> 
     {/* button */}
    </nav>

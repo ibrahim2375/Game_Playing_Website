@@ -3,7 +3,7 @@ import Image from "next/image";
 //com
 import SocialMedia from "./SocialMedia";
 //css
-import '../../css/Home/Landing.css';
+import "../../css/Home/Landing.css";
 function Landing() {
   const devices = [
     "/devices/ps4_b.svg",
@@ -15,24 +15,36 @@ function Landing() {
     <div className="relative pr-10">
       <div className="w-full h-screen flex flex-col justify-center gap-16 left_padding">
         {/* logo image */}
-        <Image className="mt-44" src="/logo/logo-re.svg" width="700" height="500" alt="logo" />
+        <Image
+          className="mt-44"
+          src="/logo/logo-re.svg"
+          width="700"
+          height="500"
+          alt="logo"
+        />
         {/* hint */}
-        <p className="hint_text hint_text_red text-5xl font-semibold">Available Now</p>
+        <p className="hint_text hint_text_red text-5xl font-semibold">
+          Available Now
+        </p>
         {/* devices */}
         <div className="flex  items-center gap-10">
-        {devices.map((device) => (
-          <Image
-          key={device}
-          className="h-full"
-          src={device}
-          width="150"
-          height="100"
-          alt="device image"
-          />
+          {devices.map((device) => (
+            <Image
+              key={device}
+              className="h-full"
+              src={device}
+              width="150"
+              height="100"
+              alt="device image"
+            />
           ))}
         </div>
+        {/* users number use */}
+        <div className="users_overview w-48 bg-black py-5 px-2 absolute top-1/4 right-0">
+          <p className="text-lg font-semibold">Over <span className="number_of_users">4 Million</span> Units Sold Worldwide!</p>
+        </div>
         {/* social media links */}
-        <SocialMedia/>
+        <SocialMedia />
       </div>
     </div>
   );

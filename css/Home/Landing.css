@@ -16,3 +16,32 @@
     filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
     position: relative;
 }
+.number_of_users {
+    color: var(--primary-color);  
+}
+.users_overview::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--primary-color);
+    background-image: url('/images/site_pattern.png');
+    background-position: left top;
+    background-size: cover;
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.users_overview::before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: var(--primary-color);
+    background-image: url('/images/site_pattern.png');
+    background-position: left top;
+    background-size: cover;
+    color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
