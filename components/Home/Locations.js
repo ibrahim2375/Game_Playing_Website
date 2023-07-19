@@ -3,8 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 //icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-//css
-import "../../css/Home/Locations.css";
 //data
 import { locations } from "../../data/locations";
 function Locations() {
@@ -22,7 +20,7 @@ function Locations() {
     <div id="locations">
       {/* ---------------------------title----------------------- */}
       <header className=" relative flex gap-10 items-center">
-        <h1 className="location_title left_padding text-4xl">LOCATION</h1>
+        <h1 className="text-mask left-padding text-4xl">LOCATION</h1>
         <div className="h-20 w-0.5 bg-white"></div>
         <div>
           <p className="">
@@ -44,20 +42,20 @@ function Locations() {
       {/* controller */}
       <div className="flex items-center gap-6 justify-center select-none">
         <IoIosArrowBack
-          className="controller_icon text-4xl cursor-pointer"
+          className="pagination_icon text-4xl cursor-pointer"
           onClick={prev_btn}
         />
         {Array.from({ length: locations.length }).map((l, index) => (
           <span
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`index_line w-12 cursor-pointer ${
+            className={`index_bg w-12 cursor-pointer ${
               index == currentIndex ? "h-1" : "h-0.5"
             }`}
           ></span>
         ))}
         <IoIosArrowForward
-          className="controller_icon text-4xl cursor-pointer"
+          className="pagination_icon text-4xl cursor-pointer"
           onClick={next_btn}
         />
       </div>

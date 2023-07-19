@@ -1,6 +1,7 @@
 //components
 import About from "@/components/Home/About";
 import Characters from "@/components/Home/Characters";
+import Gameplay from "@/components/Home/Gameplay";
 import Landing from "@/components/Home/Landing";
 import Locations from "@/components/Home/Locations";
 import Story from "@/components/Home/Story";
@@ -33,6 +34,7 @@ export default function Home() {
         <Story />
         <Characters />
         <Locations />
+        <Gameplay />
       </main>
     </div>
   );

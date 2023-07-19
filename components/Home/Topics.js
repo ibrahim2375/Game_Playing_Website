@@ -8,12 +8,12 @@ function Topics() {
     // Topics Section
     <section>
       {/* demo */}
-       <div className="left_padding flex gap-10">
+       <div className="left-padding flex gap-10">
         {/* img */}
         <Image src='/images/demo.png' width='400' height='150' alt="demo img" />
         {/* text */}
         <div>
-          <h1 className="demo_title text-4xl">Demo Available Now!</h1>
+          <h1 className="text-mask text-4xl">Demo Available Now!</h1>
           <p className="mt-5 tracking-wider">No timw Limit; no play limit</p>
         </div>
        </div>

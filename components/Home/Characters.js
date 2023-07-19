@@ -2,8 +2,6 @@
 import Image from "next/image";
 //com
 import Button from "../Layout/Button";
-//css
-import "../../css/Home/Characters.css";
 //icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 //data
@@ -27,7 +25,7 @@ function Characters() {
     <div id="characters" className="px-10 my-24">
        {/* ---------------------------header----------------------- */}
       <header  className="flex justify-between items-center gap-40">
-        <h1 className="left_padding characters_title text-4xl ">CHARACTERS</h1>
+        <h1 className="left-padding text-mask text-4xl ">CHARACTERS</h1>
         <ul className="navigate_links flex flex-wrap items-end gap-1">
           {characters.map((character,index) => (
             <li key={character.id} className="relative cursor-pointer">
@@ -58,7 +56,7 @@ function Characters() {
           <div className="h-full flex flex-col justify-center items-end gap-10">
             {/* data */}
             <div>
-              <h1 className="character_name text-6xl">
+              <h1 className="text-mask text-6xl">
                 {characters[currentIndex].name}
               </h1>
               <p className="max-w-lg mt-20">{characters[currentIndex].about}</p>

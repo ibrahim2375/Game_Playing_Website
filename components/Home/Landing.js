@@ -13,7 +13,7 @@ function Landing() {
   ];
   return (
     <div className="relative pr-10">
-      <div className="w-full h-screen flex flex-col justify-center gap-16 left_padding">
+      <div className="w-full h-screen flex flex-col justify-center gap-16 left-padding">
         {/* logo image */}
         <Image
           className="mt-44"
@@ -23,7 +23,7 @@ function Landing() {
           alt="logo"
         />
         {/* hint */}
-        <p className="hint_text hint_text_red text-5xl font-semibold">
+        <p className="text-mask text-5xl font-semibold">
           Available Now
         </p>
         {/* devices */}

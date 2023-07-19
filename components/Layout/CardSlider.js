@@ -38,8 +38,8 @@ function CardSlider({ title, type }) {
 
   return (
     <div className="my-36">
-      <header className="flex justify-between items-center mb-5 left_padding px-10">
-        <h1 className="card_sidebar_title text-4xl font-bold">{title}</h1>
+      <header className="flex justify-between items-center mb-5 left-padding px-10">
+        <h1 className="text-mask text-4xl font-bold">{title}</h1>
         {/* scroll arrows */}
         <div className="flex items-center gap-5">
           {/* line */}
@@ -56,7 +56,7 @@ function CardSlider({ title, type }) {
       {/* cards section */}
       <div
         ref={slider_ref}
-        className={`cards row  overflow-x-auto overflow-y-hidden  flex items-center gap-10 py-10 left_padding pr-10`}
+        className={`cards row  overflow-x-auto overflow-y-hidden  flex items-center gap-10 py-10 left-padding pr-10`}
       >
         {type === "card"
           ? // ----------------------------------------- card text an image -----------------------------------------
