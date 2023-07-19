@@ -2,6 +2,7 @@
 import About from "@/components/Home/About";
 import Characters from "@/components/Home/Characters";
 import Landing from "@/components/Home/Landing";
+import Locations from "@/components/Home/Locations";
 import Story from "@/components/Home/Story";
 import Topics from "@/components/Home/Topics";
 import Nav from "@/components/Layout/Nav";
@@ -31,6 +32,7 @@ export default function Home() {
         <About />
         <Story />
         <Characters />
+        <Locations />
       </main>
     </div>
   );

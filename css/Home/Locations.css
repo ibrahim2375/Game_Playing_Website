@@ -1,0 +1,19 @@
+.controller_icon {
+ color: var(--primary-color);
+}
+ .index_line {
+    background-color: var(--primary-color);
+}
+
+.location_title {
+    background-color: var(--primary-color);
+    background-image: url('/images/site_pattern.png');
+    background-position: left top;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0,0,0,0);
+    display: inline-block;
+    filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+
+}

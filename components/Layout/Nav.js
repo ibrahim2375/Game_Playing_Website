@@ -9,7 +9,7 @@ function Nav() {
    <nav className='fixed top-0 right-0 bg-transparent px-10  py-5 z-10'>
     <ul className='flex items-center gap-4'>
      <li><a href='#characters' className='text-white'>characters</a></li>
-     <li><a href='#location' className='text-white'>location</a></li>  
+     <li><a href='#locations' className='text-white'>location</a></li>  
      <li><a href='#gameplay' className='text-white'>gameplay</a></li>  
      <li><Button text={'Buy'} padding={'5px 30px'}/></li>  
     </ul> 

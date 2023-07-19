@@ -24,9 +24,9 @@ function Characters() {
     setCurrentIndex(newIndex);
   };
   return (
-    <div className="px-10 my-24">
+    <div id="characters" className="px-10 my-24">
        {/* ---------------------------header----------------------- */}
-      <header className="flex justify-between items-center gap-40">
+      <header  className="flex justify-between items-center gap-40">
         <h1 className="left_padding characters_title text-4xl ">CHARACTERS</h1>
         <ul className="navigate_links flex flex-wrap items-end gap-1">
           {characters.map((character,index) => (
