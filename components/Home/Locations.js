@@ -17,7 +17,7 @@ function Locations() {
     setCurrentIndex(newIndex);
   };
   return (
-    <div id="locations">
+    <div id="locations" className="px-10">
       {/* ---------------------------title----------------------- */}
       <header className=" relative flex gap-10 items-center">
         <h1 className="text-mask left-padding text-4xl">LOCATION</h1>
@@ -30,7 +30,7 @@ function Locations() {
         </div>
       </header>
       {/* ---------------------------slider----------------------- */}
-      <div className="my-10 px-24 grid place-items-center select-none">
+      <div className="my-10  grid place-items-center select-none">
         <Image
           className="w-2/3 h-full object-contain"
           src={`/locations/${locations[currentIndex].location}`}
@@ -39,7 +39,7 @@ function Locations() {
           alt="slider img"
         />
       </div>
-      {/* controller */}
+      {/* -----------------------controller----------------------- */}
       <div className="flex items-center gap-6 justify-center select-none">
         <IoIosArrowBack
           className="pagination_icon text-4xl cursor-pointer"

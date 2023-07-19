@@ -14,28 +14,28 @@ export const characters = [
         bg:'character2.jpg'
     },
     {
-        id: 3,
+        id: 2,
         name:'Luis Serra',
         about:'Leon comes across this mysterious man in the village. He seems to know something about the whereabouts of the US president\'s daughter, but can he be trusted...?',
         img:'character3_img.jpg',
         bg:'character3.jpg'
     },
     {
-        id: 4,
+        id: 3,
         name:'Ada Wong',
         about:'Teamed up with Leon during the Raccoon City Incident, but went missing during the destruction of Umbrella\'s underground laboratory. She suddenly shows up again, but her true purpose remains a mystery.',
         img:'character4_img.jpg',
         bg:'character4.jpg'
     },
     {
-        id: 5,
+        id: 4,
         name:'Villagers',
         about:'Once human, the Ganado worship the leader of a religious cult, and now there is only madness in their eyes…',
         img:'character5_img.jpg',
         bg:'character5.jpg'
     },
     {
-        id: 6,
+        id: 5,
         name:'Chainsaw Villager',
         about:'',
         img:'character6_img.jpg',
