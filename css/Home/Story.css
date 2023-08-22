@@ -11,3 +11,11 @@
     line-height: 4rem;
 
 }
+
+/* ===========================mobile============================= */
+@media (max-width:768px) {
+    .story .content .story_description {
+        line-height: 3rem;
+    
+    }
+}

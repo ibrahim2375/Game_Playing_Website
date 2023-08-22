@@ -39,3 +39,11 @@
     height: 300px;
     user-select: none;
 }
+
+/* ===========================mobile============================= */
+@media (max-width:768px) {
+    .scroll_progress {
+        width: 150px;
+    }
+}
+

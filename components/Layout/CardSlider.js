@@ -39,7 +39,7 @@ function CardSlider({ title, type }) {
   return (
     <div className="my-36">
       <header className="flex justify-between items-center mb-5 left-padding px-10">
-        <h1 className="text-mask text-4xl font-bold">{title}</h1>
+        <h1 className="text-mask text-2xl md:text-4xl font-bold">{title}</h1>
         {/* scroll arrows */}
         <div className="flex items-center gap-5">
           {/* line */}
@@ -63,7 +63,7 @@ function CardSlider({ title, type }) {
           topics.map((data, index) => (
               <TextCard key={data.id} data={data}/>
             ))
-          : // ----------------------------------------- videoe ---------------------------------------------------
+          : // ----------------------------------------- video ---------------------------------------------------
             trailer.map((data, index) => (
                <VideoCard key={data.id} data={data}/>
             ))}

@@ -20,7 +20,7 @@ function Locations() {
     <div id="locations" className="px-10">
       {/* ---------------------------title----------------------- */}
       <header className=" relative flex gap-10 items-center">
-        <h1 className="text-mask left-padding text-4xl">LOCATION</h1>
+        <h1 className="text-mask left-padding text-2xl md:text-4xl">LOCATION</h1>
         <div className="h-20 w-0.5 bg-white"></div>
         <div>
           <p className="">

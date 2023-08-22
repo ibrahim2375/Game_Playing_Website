@@ -5,7 +5,7 @@ function Story() {
   return (
     <div className="story px-10">
       <div className="content left-padding px-20 flex flex-col justify-center gap-10">
-        <h1 className="text-mask  mt-5 text-6xl">Story</h1>
+        <h1 className="text-mask  mt-5 text-4xl md:text-6xl">Story</h1>
         <p className="story_description max-w-3xl">
           6 years have passed since the biological disaster in Raccoon City.
           Leon S. Kennedy, one of the survivors of the incident, has been

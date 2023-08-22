@@ -12,18 +12,20 @@ function Landing() {
     "/devices/steam_b.svg",
   ];
   return (
-    <div className="relative pr-10">
+    <div className="relative">
       <div className="w-full h-screen flex flex-col justify-center gap-16 left-padding">
         {/* logo image */}
         <Image
-          className="mt-44"
+          className="mt-44 w-[500px] h-[300px] md:w-[500px] md:h-[300px]"
           src="/logo/logo-re.svg"
           width="700"
           height="500"
           alt="logo"
         />
+           {/* social media links */}
+           <SocialMedia />
         {/* hint */}
-        <p className="text-mask text-5xl font-semibold">
+        <p className="text-mask text-3xl md:text-4xl font-semibold">
           Available Now
         </p>
         {/* devices */}
@@ -31,7 +33,7 @@ function Landing() {
           {devices.map((device) => (
             <Image
               key={device}
-              className="h-full"
+              className="w-[90px] lg:w-[150px] md:h-full"
               src={device}
               width="150"
               height="100"
@@ -43,8 +45,7 @@ function Landing() {
         <div className="users_overview w-48 bg-black py-5 px-2 absolute top-1/4 right-0">
           <p className="text-lg font-semibold">Over <span className="number_of_users">4 Million</span> Units Sold Worldwide!</p>
         </div>
-        {/* social media links */}
-        <SocialMedia />
+     
       </div>
     </div>
   );

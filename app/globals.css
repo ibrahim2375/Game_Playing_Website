@@ -88,3 +88,13 @@ body {
 .index_bg {
    background-color: var(--primary-color);
 }
+
+
+
+
+/* ===========================mobile============================= */
+@media (max-width:768px) {
+    .left-padding {
+        padding-left: 2rem;
+    }
+}

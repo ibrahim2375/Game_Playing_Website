@@ -25,7 +25,7 @@ function Characters() {
     <div id="characters" className="px-10 my-24">
        {/* ---------------------------header----------------------- */}
       <header  className="flex justify-between items-center gap-40">
-        <h1 className="left-padding text-mask text-4xl ">CHARACTERS</h1>
+        <h1 className="left-padding text-mask text-2xl md:text-4xl ">CHARACTERS</h1>
         <ul className="navigate_links flex flex-wrap items-end gap-1">
           {characters.map((character,index) => (
             <li key={character.id} className="relative cursor-pointer">
@@ -34,7 +34,7 @@ function Characters() {
                 className={`transition-all  duration-500 filter grayscale hover:grayscale-0 ${currentIndex === index && 'grayscale-0'}`}
                 style={{ border: ".1px solid gray" }}
                 src={`/characters/${character.img}`}
-                width="130"
+                width="120"
                 height="60"
                 alt={character.name}
               />
@@ -50,13 +50,13 @@ function Characters() {
           style={{
             backgroundImage: `url(/characters/${characters[currentIndex].bg})`,
           }}
-          className="w-full h-[600px] bg-center bg-cover duration-300 px-24"
+          className="w-full h-[400px] md:h-[600px] bg-center bg-cover duration-300 px-24"
         >
           {/* character info */}
           <div className="h-full flex flex-col justify-center items-end gap-10">
             {/* data */}
             <div>
-              <h1 className="text-mask text-6xl">
+              <h1 className="text-mask text-4xl md:text-6xl">
                 {characters[currentIndex].name}
               </h1>
               <p className="max-w-lg mt-20">{characters[currentIndex].about}</p>

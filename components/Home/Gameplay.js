@@ -23,16 +23,16 @@ function Gameplay() {
     <div id="gameplay" className="px-10 my-24">
       {/* ---------------------------title----------------------- */}
       <header className=" relative flex gap-10 items-center mb-24">
-        <h1 className="text-mask left-padding text-4xl">GAMEPLAY</h1>
+        <h1 className="text-mask left-padding text-2xl md:text-4xl">GAMEPLAY</h1>
         <div className="h-20 w-0.5 bg-white"></div>
       </header>
       {/* -----------------------content----------------------- */}
-      <div className="flex gap-10 justify-between">
+      <div className="flex gap-10 flex-col md:flex-row justify-between">
         {/* -----------------------left----------------------- */}
         <div className="bg-black/20 pt-5 left-padding flex-auto">
           <div className="flex flex-col gap-10 h-60">
-            <h1 className="text-mask text-4xl">ACTION</h1>
-            <h1 className="text-4xl">{gameplay[currentIndex].title}</h1>
+            <h1 className="text-mask text-2xl md:text-4xl">ACTION</h1>
+            <h1 className="text-2xl md:text-4xl">{gameplay[currentIndex].title}</h1>
             <p className="max-w-sm">{gameplay[currentIndex].description}</p>
           </div>
           {/* -----------------------pagination----------------------- */}
@@ -61,7 +61,7 @@ function Gameplay() {
           style={{
             backgroundImage: `url(/gameplay/${gameplay[currentIndex].poster})`,
           }}
-          className="relative bg-cover bg-cenetr bg-no-repeat w-1/2 h-[500px] self-end "
+          className="relative bg-cover bg-cenetr bg-no-repeat w-full md:w-1/2 h-[500px] self-end "
         >
           {/* preview button */}
           <div className="absolute bottom-3 left-3">
